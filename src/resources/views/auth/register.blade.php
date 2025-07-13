@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/auth.css') }}">
+<link rel="stylesheet" href="{{ asset('css/register.css') }}">
 @endsection
 
 
@@ -9,7 +9,7 @@
 <div class="auth-card">
     <h2 class="auth-title">Register</h2>
 
-    <form method="POST" action="{{ route('register') }}">
+    <form method="POST" action="{{ route('register.post') }}">
         @csrf
 
         {{-- 名前 --}}

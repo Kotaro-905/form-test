@@ -35,7 +35,6 @@ class ContactController extends Controller
     {
         // DB保存（ログインユーザーありの場合は user_id を付与）
         Contact::create([
-            'user_id'     => auth()->check() ? auth()->id() : null,
             'category_id' => $request->input('category_id'),
             'first_name'  => $request->input('first_name'),
             'last_name'   => $request->input('last_name'),

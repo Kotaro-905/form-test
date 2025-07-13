@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8" />
@@ -13,16 +13,24 @@
 
 <body>
     <header class="header">
-        <div class="logo">FashionablyLate</div>
-        <nav class="nav">
-            @if (request()->routeIs('login'))
-            <a href="{{ route('register') }}" class="nav-link">register</a>
-            @elseif (request()->routeIs('register'))
-            <a href="{{ route('login') }}" class="nav-link">login</a>
-            @endif
-        </nav>
-    </header>
+        <div class="header-inner">
+            <div class="logo">FashionablyLate</div>
+            <nav class="nav">
+                @if (request()->routeIs('register'))
+                <a href="{{ route('login') }}" class="nav-link">login</a>
 
+                @elseif (request()->routeIs('login'))
+                <a href="{{ route('register') }}" class="nav-link">register</a>
+
+                @elseif (request()->is('admin/*'))
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit" class="nav-link logout-btn">logout</button>
+                </form>
+                @endif
+            </nav>
+        </div>
+    </header>
 
     <main>
         @yield('content')

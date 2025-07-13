@@ -16,7 +16,7 @@ class User extends Authenticatable
         'password',
     ];
 
-    // リレーション：ユーザーは複数のコンタクトを持つ
+    
     public function contacts()
     {
         return $this->hasMany(Contact::class);

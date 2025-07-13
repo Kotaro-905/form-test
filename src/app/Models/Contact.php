@@ -11,7 +11,6 @@ class Contact extends Model
 
     // 保存可能なカラムの指定
     protected $fillable = [
-        'user_id',
         'category_id',
         'first_name',
         'last_name',

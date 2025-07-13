@@ -1,12 +1,17 @@
 @extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/auth.css') }}">
+<link rel="stylesheet" href="{{ asset('css/login.css') }}">
 @endsection
 
 @section('content')
 <div class="form-container">
     <h2 class="form-title">ログイン</h2>
+
+    @if (session('status'))
+    <p class="status-message">{{ session('status') }}</p>
+    @endif
+    
     <form method="POST" action="{{ route('login') }}">
         @csrf
 

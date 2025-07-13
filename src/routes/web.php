@@ -20,5 +20,9 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
 });
 
 // 新規登録（register）
+Route::get('/register', function () {
+    return view('auth.register'); 
+})->name('register');
+
 Route::get('/register', [RegisterController::class, 'show'])->name('register');
-Route::post('/register', [RegisterController::class, 'register'])->name('register.submit');
+Route::post('/register', [RegisterController::class, 'register'])->name('register.post');

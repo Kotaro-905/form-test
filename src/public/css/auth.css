@@ -1,105 +1,60 @@
-body {
-    background-color: #f3ece5;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 .header {
     background-color: #fff;
-    padding: 20px 40px;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 16px 0;
+    position: relative;
+}
+
+.header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ddd;
+    padding: 20px;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #6d5844;
+    color: #6b564b;
 }
 
-.nav .nav-link {
-    color: #c2a78e;
+.nav {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.nav-link {
+    color: #c2a68c;
     text-decoration: none;
-    border: 1px solid #c2a78e;
-    padding: 5px 12px;
+    border: 1px solid #c2a68c;
+    padding: 6px 12px;
     border-radius: 4px;
     font-size: 14px;
 }
 
-.nav .nav-link:hover {
-    background-color: #c2a78e;
-    color: #fff;
-}
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-}
-
-.form-container {
-    background-color: #fff;
-    padding: 40px 40px 30px;
-    border-radius: 6px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-}
-
-.form-title {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #6d5844;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 6px;
-    color: #3f3f3f;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 12px;
+.nav-link,
+.logout-button {
+    background-color: transparent;
+    border: 1px solid #d4c7bb;
+    border-radius: 5px;
+    padding: 6px 12px;
+    color: #7a6858;
     font-size: 14px;
-    background-color: #f6f6f6;
-    border: none;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.form-group input:focus {
-    outline: none;
-    border: 1px solid #b8a58c;
-    background-color: #fff;
-}
-
-.form-button {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    background-color: #7a6653;
-    color: white;
-    border: none;
-    border-radius: 4px;
+    text-decoration: none;
     cursor: pointer;
+    margin-left: 10px;
 }
 
-.form-button:hover {
-    background-color: #6d5844;
+
+.logout-button {
+    font-family: inherit;
 }
 
-.error {
-    color: #d9534f;
-    font-size: 13px;
-    margin-top: 5px;
+
+.nav form {
+    display: inline;
 }

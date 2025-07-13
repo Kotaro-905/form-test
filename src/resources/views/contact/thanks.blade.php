@@ -3,14 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>送信完了</title>
-    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/thanks.css') }}">
 </head>
 
 <body>
-    <h1>送信完了</h1>
-    <p>お問い合わせありがとうございました。</p>
-    <a href="{{ route('contact.index') }}">トップへ戻る</a>
+    <div class="thanks-container">
+        <h1 class="thanks-text">お問い合わせありがとうございました</h1>
+        <a href="{{ route('contact.index') }}" class="home-button">HOME</a>
+        <div class="background-text">Thank you</div>
+    </div>
 </body>
 
 </html>

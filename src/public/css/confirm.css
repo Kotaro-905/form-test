@@ -1,63 +1,83 @@
 body {
-    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-    background-color: #f7f7f7;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
 }
 
 .header {
-    border-bottom: 1px solid #ddd;
-    padding: 20px 0;
     text-align: center;
-}
-
-.site-title {
+    padding: 40px 0 10px;
     font-size: 28px;
-    color: #7b6453;
-    margin: 0;
+    color: #6b4c3b;
+    font-weight: bold;
 }
 
-.confirm-title {
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.confirm-container {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
     text-align: center;
-    color: #7b6453;
-    margin: 40px 0 20px;
+}
+
+.form-title {
     font-size: 24px;
+    color: #6b4c3b;
+    margin-bottom: 30px;
 }
 
 .confirm-table {
-    margin: 0 auto;
-    width: 80%;
-    max-width: 700px;
+    width: 100%;
     border-collapse: collapse;
-    background-color: white;
-}
-
-.confirm-table th,
-.confirm-table td {
-    border: 1px solid #ddd;
-    padding: 15px;
+    margin-bottom: 30px;
 }
 
 .confirm-table th {
-    background-color: #b79d84;
+    width: 30%;
+    background-color: #bca996;
     color: white;
     text-align: left;
-    width: 30%;
+    padding: 12px;
+    vertical-align: top;
+    font-weight: normal;
 }
 
-.button-area {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+.confirm-table td {
+    background-color: #fefefe;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+    word-break: break-word;
 }
 
-.btn {
-    background-color: #b79d84;
+.button-group form {
+    display: inline-block;
+}
+
+.btn-submit,
+.btn-back {
+    background-color: #8c7267;
     color: white;
+    padding: 10px 40px;
     border: none;
-    padding: 10px 25px;
-    margin: 0 10px;
+    border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
-    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover,
+.btn-back:hover {
+    background-color: #7b6259;
 }

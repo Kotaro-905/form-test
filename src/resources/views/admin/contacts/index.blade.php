@@ -1,12 +1,12 @@
 <!-- 管理画面  -->
-@extends('layouts.admin')
+@extends('layouts.app')
 
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
 @endsection
 
 @section('content')
-<h2 class="header">お問い合わせ一覧</h2>
+<h2 class="header">Admin</h2>
 
 <form method="GET" class="search-form">
     <input type="text" name="keyword" placeholder="お名前 or メール" value="{{ request('keyword') }}">
