@@ -1,0 +1,209 @@
+/* 共通 */
+body {
+    font-family: '游ゴシック体', 'Yu Gothic', sans-serif;
+    background-color: #f3eee8;
+    color: #6f564b;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ヘッダー */
+.admin-header {
+    background-color: #fff;
+    border-bottom: 1px solid #e0dcd6;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logout-form {
+    display: inline;
+}
+
+.logout-button {
+    border: 1px solid #d7cabe;
+    background-color: #fff;
+    color: #b09884;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* メイン */
+.admin-main {
+    padding: 40px;
+}
+
+.header {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* フォーム */
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.search-form input,
+.search-form select,
+.search-form button,
+.reset-btn {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f9f8f7;
+    font-size: 14px;
+}
+
+.search-form button {
+    background-color: #7f6b5f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.reset-btn {
+    background-color: #e8dfd9;
+    color: #8a7769;
+}
+
+/* エクスポートボタン */
+.export-btn {
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    background-color: #e8dfd9;
+    border: none;
+    border-radius: 3px;
+    color: #8a7769;
+    cursor: pointer;
+}
+
+/* テーブル */
+.table-container {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.table th,
+.table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #9d8577;
+    color: #fff;
+}
+
+/* 詳細ボタン */
+.detail-button {
+    border: 1px solid #d7cabe;
+    background-color: #fff;
+    color: #b09884;
+    padding: 5px 12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* ページネーション */
+.pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pagination .page-link,
+.pagination .page-item {
+    display: inline-block;
+    margin: 0 5px;
+    color: #7f6b5f;
+}
+
+
+
+
+
+/* モーダルのベース */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* 背景の黒透過 */
+    justify-content: center;
+    align-items: center;
+}
+
+/* モーダルの中身 */
+.modal-content {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    color: #5c4b3b;
+    font-size: 14px;
+}
+
+/* 閉じるボタン */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+/* 詳細の行 */
+.detail-row {
+    margin-bottom: 16px;
+}
+
+.detail-row strong {
+    display: inline-block;
+    width: 140px;
+    font-weight: bold;
+}
+
+/* 削除ボタン */
+.delete-btn {
+    background-color: #d37b7b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+}

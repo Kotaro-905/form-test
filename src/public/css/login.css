@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: "YuMincho", serif;
+    background: #eee8e1;
+    color: #5b4a40;
+}
+
+/* 見出し */
+.page-title {
+    text-align: center;
+    margin: 3rem 0 2rem;
+    font-size: 1.5rem;
+}
+
+/* フォーム枠 */
+.form-wrapper {
+    max-width: 560px;
+    margin: 0 auto 4rem;
+    background: #fff;
+    padding: 4rem 5rem;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ラベルと入力欄 */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.8rem;
+    font-size: 0.9rem;
+    border: none;
+    background: #f0efee;
+    color: #5b4a40;
+}
+
+input::placeholder {
+    color: #b9b1ab;
+}
+
+/* ボタン */
+button {
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+    padding: 0.7rem 0;
+    font-size: 0.95rem;
+    border: none;
+    background: #6b5a4b;
+    color: #fff;
+    cursor: pointer;
+}

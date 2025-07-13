@@ -1,0 +1,92 @@
+body {
+    font-family: 'Yu Gothic', sans-serif;
+    background: #fff;
+    color: #7b6e65;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.required {
+    color: #e38287;
+    margin-left: 5px;
+}
+
+.name-inputs,
+.tel-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.name-inputs input,
+.tel-inputs input {
+    flex: 1;
+}
+
+.gender-options label {
+    margin-right: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f7f7f7;
+    font-size: 14px;
+    color: #7b6e65;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+select {
+    appearance: none;
+    background: #f7f7f7 url('data:image/svg+xml;utf8,<svg fill="gray" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    background-size: 20px;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 30px;
+    background: #7b6e65;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
