@@ -31,6 +31,10 @@
   <li>HTML/CSS（クラスベースのスタイリング</li>
 </ul>
 
+## ER図
+<img width="1463" height="949" alt="スクリーンショット 2025-07-14 191514" src="https://github.com/user-attachments/assets/85463ba0-df35-4344-ae29-62518a9e4634" />
+
+
 ## URL
 ・開発環境：http://localhost/（お問い合わせフォーム）
 　　　　　　http://localhost/register　（登録画面）
