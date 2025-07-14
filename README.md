@@ -36,8 +36,8 @@
 
 
 ## URL
-・開発環境：http://localhost/（お問い合わせフォーム）
-　　　　　　http://localhost/register　（登録画面）
+・開発環境（お問い合わせフォーム）：http://localhost/
+　　　　　（登録画面）：　http://localhost/register　
 
 ・phpMyAdmin：http://localhost:8080/index.php?route=/database/structure&db=laravel_db
 
