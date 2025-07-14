@@ -4,28 +4,32 @@
 <h2>環境構築</h2>
 
 ## Dockerビルド
-　1.origin  git@github.com:Kotaro-905/form-test.git
-  2.ug docker-compose up -d --build
+<ul>
+　<li>1.origin  git@github.com:Kotaro-905/form-test.git</li>
+  <li>2.ug docker-compose up -d --build</li>
+  </ul>
 
 ※MySQLは、OSによって起動しない場合があるのでそれぞれのPCに合わせてdocker-compose.ymlファイルを編集してください
 
 ## Laravel環境構築
-
-　1．docker-compose exec php bash
-　2.composer install
-　3..env.exampleファイルからenvを作成し、環境変数を変更
-　4.php artisan key:generate
-　5.php artisan migrate
-　6.php artisan db:seed
+<ul>
+　<li>1．docker-compose exec php bash</li>
+　<li>2.composer install</li>
+　<li>3..env.exampleファイルからenvを作成し、環境変数を変更</li>
+　<li>4.php artisan key:generate</li>
+　<li>5.php artisan migrate</li>
+　<li>6.php artisan db:seed</li>
+</ul>
 
 ## 使用技術
-
-  PHP 7.4.9
-  Laravel 8.83.29
-  MySQL　9.3.0
-  Docker（開発環境）
-  Laravel Fortify（認証機能）
-  HTML/CSS（クラスベースのスタイリング）
+<ul>
+ <li>PHP 7.4.9</li>
+ <li>Laravel 8.83.29</li>
+ <li>MySQL　9.3.0</li>
+  <li>Docker（開発環境</li>
+  <li>Laravel Fortify（認証機能</li>
+  <li>HTML/CSS（クラスベースのスタイリング</li>
+</ul>
 
 ## URL
 ・開発環境：http://localhost/（お問い合わせフォーム）
