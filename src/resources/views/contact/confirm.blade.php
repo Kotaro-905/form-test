@@ -76,7 +76,11 @@
                         <button type="submit" class="btn-submit">送信</button>
                     </form>
 
-                    <form action="{{ route('contact.index') }}" method="GET">
+                    <form action="{{ route('contact.confirm') }}" method="POST">
+                        @csrf
+                        @foreach ($inputs as $key => $value)
+                        <input type="hidden" name="{{ $key }}" value="{{ $value }}">
+                        @endforeach
                         <button type="submit" name="back" value="true" class="btn-back">修正</button>
                     </form>
                 </div>

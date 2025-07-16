@@ -21,7 +21,7 @@ class ContactController extends Controller
     {
         $inputs = $request->all();
 
-        // 戻るボタンが押された場合は入力画面へ戻す（バリデーション通過後）
+        
         if ($request->has('back')) {
             return redirect()->route('contact.index')->withInput();
         }
@@ -33,7 +33,6 @@ class ContactController extends Controller
     // 保存処理
     public function store(Request $request)
     {
-        // DB保存（ログインユーザーありの場合は user_id を付与）
         Contact::create([
             'category_id' => $request->input('category_id'),
             'first_name'  => $request->input('first_name'),
